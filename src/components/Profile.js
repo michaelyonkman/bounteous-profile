@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import BounteousLogo from '../Bounteous-logo.png';
 
 const Profile = () => {
-  const [background, setBackground] = useState('profile-container');
+  const [liveBackground, setLiveBackground] = useState(null);
 
   const makeLive = () => {
-    if (background === 'profile-container') {
-      setBackground('live-profile-container');
+    if (!liveBackground) {
+      setLiveBackground('make-live');
     } else {
-      setBackground('profile-container');
+      setLiveBackground(null);
     }
   };
 
   return (
-    <div className={background}>
+    <div className={`${liveBackground} profile-container`}>
       <div className="logo-button-container">
         <img
           src={BounteousLogo}
