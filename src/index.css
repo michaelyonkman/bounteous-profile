@@ -1,13 +1,98 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(221, 225, 234);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.profile-container {
+  box-sizing: border-box;
+  margin-top: 5em;
+  box-shadow: 2px 2px 5px 3px #aaa7a7;
+  border-radius: 8px;
+  width: 80%;
+  background-image: url('./Bounteous-wave.png');
+  background-repeat: no-repeat;
+  background-size: 100% 270px;
+  background-color: #ffff;
+}
+
+.live-profile-container {
+  margin-top: 5em;
+  box-shadow: 2px 2px 5px 3px #aaa7a7;
+  border-radius: 8px;
+  width: 40%;
+  background-image: url('https://media.giphy.com/media/hU8zl0Je75fvOeq2rS/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 55%;
+  background-color: #ffff;
+}
+
+.logo-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 225px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.Bounteous-logo {
+  box-shadow: 1px 1px 8px 1px #aaa7a7;
+  border-radius: 8px;
+}
+
+.follow-button {
+  width: 6em;
+  height: 1.75em;
+  margin-top: 3em;
+  border-radius: 10px;
+  font-size: 1.1em;
+  padding: 0;
+  background-color: #ffff;
+  color: rgb(55, 25, 170);
+  border: 2px solid rgb(55, 25, 170);
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 2.25em;
+  padding-right: 3em;
+  /* letter-spacing: -0.01em; */
+}
+
+.profile-text h2 {
+  margin-bottom: 0.4em;
+  font-size: 1.7em;
+}
+
+.profile-text h4 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.profile-text h5 {
+  margin-top: 0.6em;
+  margin-bottom: 1.5em;
+  font-size: 0.9em;
+}
+
+.profile-headline-text {
+  letter-spacing: -0.05em;
+}
+
+.blue-text {
+  color: rgb(100, 146, 253);
+}
+
+.bullet {
+  font-size: 10px;
+  padding-bottom: 2px;
+}
+
+@media only screen and (min-width: 600px) {
+  .profile-container {
+    width: 50%;
+  }
 }
